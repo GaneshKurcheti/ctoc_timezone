@@ -1,16 +1,16 @@
 "use strict";
 
-CtoCTimezone = (function() {
+var CtoCTimezone = (function() {
     /*
     * Starts the conversion process.
     */
     var initiateConversion = function(){
       if (window.removeEventListener)
-        window.removeEventListener('load', process);
+        window.removeEventListener('load', initiateConversion);
       else if (window.detachEvent)
-        window.detachEvent('onload', process);
-      nodesToConvert=document.querySelectorAll('[data-ctoc-timezone="server"]');
-      for(i = 0; i < nodesToConvert.length; i++){
+        window.detachEvent('onload', initiateConversion);
+      var nodesToConvert=document.querySelectorAll('[data-ctoc-timezone="server"]');
+      for(var i = 0; i < nodesToConvert.length; i++){
         convertToClient(nodesToConvert[i]);
       }
     };
@@ -22,15 +22,15 @@ CtoCTimezone = (function() {
     */
     var convertToClient = function(node){
       node.innerHTML=""
-      timeToConvert=node.getAttribute('data-ctoc-time');
-      clientTime = new Date(timeToConvert);
-      if(node.getAttribute('data-ctoc-req-zone')!="")
+      var timeToConvert=node.getAttribute('data-ctoc-time');
+      var clientTime = new Date(timeToConvert);
+      if(node.getAttribute('data-ctoc-req-zone')!="" && node.getAttribute('data-ctoc-req-zone')!=null)
       {
         // Need to handle this to convert to zonal specific Date Object 
         clientTime = node.getAttribute('data-ctoc-req-zone')
       }
-      result=clientTime;
-      if(node.getAttribute('data-ctoc-callback')!=""){
+      var result=clientTime;
+      if(node.getAttribute('data-ctoc-callback')!="" && node.getAttribute('data-ctoc-callback')!=null){
         executeCallback(node.getAttribute('data-ctoc-callback') , clientTime);
       }
       node.innerHTML=result;
