@@ -22,6 +22,7 @@ The package could be used for following cases:
    Here **data-ctoc-timezone** is the identifier for attribute,  gets removed once the date is conversion is complete.
    
    **data-ctoc-time** is the time to be converted , should be given in a valid JS date-string  format . **[View Date Strings](https://www.w3schools.com/js/js_date_formats.asp)**
+  
    **data-ctoc-req-zone** is the timezone to convert the given date-time object.The field accepts all IANA timezones and variety of other timezone offsets. You can also give the offset in form of **"+hh:mm" or "-hh:mm" or simply an integer**.The Timezone offsets are available in the **[View TimeZones](https://github.com/sandeepvvn/ctoc_timezone/wiki/TimeZones)**
    
    **data-ctoc-format** is the format specifier for the date-time object. You can construct your own format using the following rules       **[View Formats](https://github.com/sandeepvvn/ctoc_timezone/wiki/Formats)**. Not defining the format gives a Date with Datestring format.
