@@ -12,7 +12,7 @@ var CtoC = (function () {
       window.removeEventListener('load', initiateConversion);
     else if (window.detachEvent)
       window.detachEvent('onload', initiateConversion);
-    var nodesToConvert = document.querySelectorAll('[data-ctoc]');
+    var nodesToConvert = document.querySelectorAll('[data-ctoc-timezone]');
     for (var i = 0; i < nodesToConvert.length; i++) {
       convertToClient(nodesToConvert[i]);
     }
@@ -146,22 +146,22 @@ var CtoC = (function () {
       offset=parseFloat(parseInt(timeZone.substring(0,colonIndex))+minutesInHours);
       var newdate = new Date(utc + (3600000 * offset));
     }
-    else{
-      offset=timeZone;
-    var newdate = new Date(utc + (3600000 * parseFloat(myMap.get(offset), 10)));
+    else if(parseFloat(timeZone)!==NaN)
+    {
+        offset=parseFloat(timeZone);
+       var newdate = new Date(utc + (3600000 * offset));
     }
-  }
+  
   else
   {
     offset=timeZone;
-    var newdate = new Date(utc + (3600000 * offset));
+   var newdate = new Date(utc + (3600000 * parseFloat(myMap.get(offset), 10)));
   }
-
   return newdate
 
 }
 
-
+}
 
   var toFormat = function (newdate,format) {
     var req_format;
