@@ -21,11 +21,10 @@ The package could be used for following cases:
    
    Here **data-ctoc-timezone** is the identifier for attribute,  gets removed once the date is conversion is complete.
    
-   **data-ctoc-time** is the time to be converted , should be given in a valid JS date-string  format . **[View Date String formats]**  (https://pages.github.com/).
+   **data-ctoc-time** is the time to be converted , should be given in a valid JS date-string  format . **[View Date Strings](https://www.w3schools.com/js/js_date_formats.asp)**
+   **data-ctoc-req-zone** is the timezone to convert the given date-time object.The field accepts all IANA timezones and variety of other timezone offsets. You can also give the offset in form of **"+hh:mm" or "-hh:mm" or simply an integer**.The Timezone offsets are available in the **[View TimeZones](https://github.com/sandeepvvn/ctoc_timezone/wiki/TimeZones)**
    
-   **data-ctoc-req-zone** is the timezone to convert the given date-time object.The field accepts all IANA timezones and variety of other timezone offsets. You can also give the offset in form of **"+hh:mm" or "-hh:mm" or simply an integer**.The Timezone offsets are available in the **[View Time Zones]**  (https://pages.github.com/).
-   
-   **data-ctoc-format** is the format specifier for the date-time object. You can construct your own format using the following rules       **[View Formats](https://pages.github.com/)**. Not defining the format gives a Date with Datestring format.
+   **data-ctoc-format** is the format specifier for the date-time object. You can construct your own format using the following rules       **[View Formats](https://github.com/sandeepvvn/ctoc_timezone/wiki/Formats)**. Not defining the format gives a Date with Datestring format.
    
    **Example** :
    
@@ -76,9 +75,9 @@ Output :
         
    Here the **dateobject** is must paramater for the method to work while both timeZone and format considered optional.It is Date object type of JS (Date()).
    
-   In **timeZone** , you can pass any IANA or offset values specified in  **[View Time Zones]**  (https://pages.github.com/). Not passing or giving empty string converts to local time.  
+   In **timeZone** , you can pass any IANA or offset values specified in  **[View TimeZones](https://github.com/sandeepvvn/ctoc_timezone/wiki/TimeZones)**. Not passing or giving empty string converts to local time.  
    
-   In **format** sepcify any of the format types in **[View Formats](https://pages.github.com/)**. Not passing a format or giving empty returns in default format.
+   In **format** sepcify any of the format types in  **[View Formats](https://github.com/sandeepvvn/ctoc_timezone/wiki/Formats)**. Not passing a format or giving empty returns in default format.
    Example:
           
           `CtoC.toTimeZone(new Date(),"EST");`
@@ -99,7 +98,7 @@ Output :
   Use the 'toFormat' method in CtoC.
      
      `CtoC.toFormat(dateobject,format)`
-  Format accepts two parameters - dateobject the date passed in date type and an optional format in string of specifies types.
+  Format accepts two parameters - dateobject the date passed in date type and an optional format in string of specifies types. **[View Formats](https://github.com/sandeepvvn/ctoc_timezone/wiki/Formats)**
   
   Example:
   
