@@ -146,7 +146,7 @@ var CtoC = (function () {
       offset=parseFloat(parseInt(timeZone.substring(0,colonIndex))+minutesInHours);
       var newdate = new Date(utc + (3600000 * offset));
     }
-    else if(parseFloat(timeZone)!==NaN)
+    else if(!isNaN(parseFloat(timeZone)))
     {
         offset=parseFloat(timeZone);
        var newdate = new Date(utc + (3600000 * offset));
