@@ -36,6 +36,7 @@ The package could be used for following cases:
     `Fri Mar 01 2013 05:30:00 GMT+0530 (India Standard Time)`
    
    **For Changing Timezone :**(Default Format : "ddd MMM dd YYYY hh:mm:ss")
+    
     Using IANA format:
    
    `<div data-ctoc-timezone  data-ctoc-time="Mar 01 2013 05:30:00 +5:30" data-ctoc-req-zone="America/Lima" data-ctoc-req-format=""></div>`
