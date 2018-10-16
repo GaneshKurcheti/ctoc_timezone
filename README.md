@@ -39,16 +39,16 @@ The package could be used for following cases:
     
     Using IANA format:
    
-   `<div data-ctoc-timezone  data-ctoc-time="Mar 01 2013 05:30:00 +5:30" data-ctoc-req-zone="America/Lima" data-ctoc-req-format=""></div>`
+   `<div data-ctoc-timezone  data-ctoc-time="Mar 01 2013 05:30:00 +5:30" data-ctoc-req-zone="America/Lima" data-ctoc-req-format=""> </div>`
     
-  Output :
+     Output :
   
   `Thu Feb 28 2013 19:00:00`
    
     Using offset in hh:mm format:
    
    `<div data-ctoc-timezone  data-ctoc-time="Mar 01 2013 05:30:00 +5:30" data-ctoc-req-zone="-5:00" data-ctoc-req-format=""</div>`
-Output :
+   Output :
   `Thu Feb 28 2013 19:00:00`
   
   Using Integer :
