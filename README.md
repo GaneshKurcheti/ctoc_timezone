@@ -1,7 +1,7 @@
- c2c_timezone
+#CtoC
 
 
-c2c_timezone(Convert to client timezone) is a simple yet useful JS that is used to convert the time to the client side timezone by employing minimum changes  in your application. c2c_timezone is capable to convert the  date-time to both local and any other timezone you want it to. 
+CtoC(Convert to client timezone) is a simple yet useful JS that is used to convert the time to the client side timezone by employing minimum changes  in your application. c2c_timezone is capable to convert the  date-time to both local and any other timezone you want it to. 
 
 This package has **javascript handle** that can be fetched into your code to handle the date objects. The primary purpose of this package is to eliminate the mundane code that user  uses to handle timezones and necessary formats.
 
