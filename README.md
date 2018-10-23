@@ -13,49 +13,54 @@ The package could be used for following cases:
 
 ## Usage
 
- - **Convert a date by using a data attribute**
+ ## Convert a date by using a data attribute
     
-   Return the date in the following format :
+   **Return the date in the following format** :
      
    `<div data-ctoc-timezone   data-ctoc-time="" data-ctoc-req-zone="" data-ctoc-req-format=""</div>`
    
-   Here **data-ctoc-timezone** is the identifier for attribute,  gets removed once the date is conversion is complete.
-   
-   **data-ctoc-time** is the time to be converted , should be given in a valid JS date-string  format . **[View Date Strings](https://www.w3schools.com/js/js_date_formats.asp)**
+   | Attribute | Description |
+| --- | --- |
+| **data-ctoc-timezone**        | Identifier for  data attribute,  gets removed once the date is conversion is complete. |
+| **data-ctoc-time**            | is the time to be converted , should be given in a valid JS date-string  format . **[View Date Strings](https://www.w3schools.com/js/js_date_formats.asp)** |
+|  **data-ctoc-req-zone**       | is the timezone to convert the given date-time object.The field accepts all IANA timezones and variety of other timezone offsets. You can also give the offset in form of **"+hh:mm" or "-hh:mm" or simply an integer**.The Timezone offsets are available in the **[View TimeZones](https://github.com/sandeepvvn/ctoc_timezone/wiki/TimeZones)** |
+| **data-ctoc-format**          | is the format specifier for the date-time object. You can construct your own format using the following rules       **[View Formats](https://github.com/sandeepvvn/ctoc_timezone/wiki/Formats)**. Not defining the format gives a Date with Datestring format.|
+    
   
-   **data-ctoc-req-zone** is the timezone to convert the given date-time object.The field accepts all IANA timezones and variety of other timezone offsets. You can also give the offset in form of **"+hh:mm" or "-hh:mm" or simply an integer**.The Timezone offsets are available in the **[View TimeZones](https://github.com/sandeepvvn/ctoc_timezone/wiki/TimeZones)**
-   
-   **data-ctoc-format** is the format specifier for the date-time object. You can construct your own format using the following rules       **[View Formats](https://github.com/sandeepvvn/ctoc_timezone/wiki/Formats)**. Not defining the format gives a Date with Datestring format.
-   
+  
    **Example** :
    
    `<div data-ctoc-timezone  data-ctoc-time="Mar 01 2013 05:30:00 +5:30" data-ctoc-req-zone="" data-ctoc-req-format=""></div>`
     
-   Output:
+   **Output**:
    
     `Fri Mar 01 2013 05:30:00 GMT+0530 (India Standard Time)`
    
-   **For Changing Timezone :**(Default Format : "ddd MMM dd YYYY hh:mm:ss")
+   ### For Changing Timezone :
+   
+   (Default Format : "ddd MMM dd YYYY hh:mm:ss")
     
-    Using IANA format:
+  **Using IANA format**:
    
    `<div data-ctoc-timezone  data-ctoc-time="Mar 01 2013 05:30:00 +5:30" data-ctoc-req-zone="America/Lima" data-ctoc-req-format=""> </div>`
     
-     Output :
+   **Output :
   
   `Thu Feb 28 2013 19:00:00`
    
-    Using offset in hh:mm format:
+  **Using offset in hh:mm format**:
    
    `<div data-ctoc-timezone  data-ctoc-time="Mar 01 2013 05:30:00 +5:30" data-ctoc-req-zone="-5:00" data-ctoc-req-format=""</div>`
-   Output :
+   
+   **Output**:
+  
   `Thu Feb 28 2013 19:00:00`
   
-  Using Integer :
+  **Using Integer** :
   
   `<div data-ctoc-timezone  data-ctoc-time="Mar 01 2013 05:30:00 +5:30" data-ctoc-req-zone=-5 data-ctoc-req-format=""></div>`
   
-  Output :
+  **Output** :
   
   `Thu Feb 28 2013 19:00:00`
                                 
@@ -63,17 +68,18 @@ The package could be used for following cases:
    
    `<div data-ctoc-timezone  data-ctoc-time="Mar 01 2013 05:30:00 +5:30" data-ctoc-req-zone="America/Lima" data-ctoc-req-format=" ddd Do MMM YYYY hh:mm:ss #{America}"></div>`
    
-   Output:
+   **Output**:
    
    `Thu 28th Feb 2013 19:00:00 America`
   
   
   
-- **Convert using method call :**
+### Convert using method call :
 
   
-   Use the  `toTimeZone` method in CtoC.
-        `CtoC.toTimeZone(dateobject,timeZone,format);`
+  **Use the  `toTimeZone` method in CtoC.**
+        
+  `CtoC.toTimeZone(dateobject,timeZone,format);`
         
    Here the **dateobject** is must paramater for the method to work while both timeZone and format considered optional.It is Date object type of JS (Date()).
    
