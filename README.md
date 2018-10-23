@@ -93,15 +93,15 @@ The package could be used for following cases:
           
    **Output:**
          
-    `Fri Mar 1 2013 05:30:00`
+   `Fri Mar 1 2013 05:30:00`
     
   **Changing format in toTimeZone:**
         
-        `CtoC.toTimeZone(new Date(),"EST","Do MMM YYYY hh:mm:ss #{EST}");`
+   `CtoC.toTimeZone(new Date(),"EST","Do MMM YYYY hh:mm:ss #{EST}");`
         
   **Output :**
         
-        `28th Feb 2013 19:00:00 EST`
+  `28th Feb 2013 19:00:00 EST`
     
    ### Changing Format:
          
