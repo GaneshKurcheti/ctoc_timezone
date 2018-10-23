@@ -64,7 +64,7 @@ The package could be used for following cases:
   
   `Thu Feb 28 2013 19:00:00`
                                 
-  **Changing Format:** 
+  ### Changing Format:
    
    `<div data-ctoc-timezone  data-ctoc-time="Mar 01 2013 05:30:00 +5:30" data-ctoc-req-zone="America/Lima" data-ctoc-req-format=" ddd Do MMM YYYY hh:mm:ss #{America}"></div>`
    
@@ -74,8 +74,9 @@ The package could be used for following cases:
   
   
   
-### Convert using method call :
+## Convert using method call :
 
+  ### Chnaging TimeZone:
   
   **Use the  `toTimeZone` method in CtoC.**
         
@@ -86,33 +87,35 @@ The package could be used for following cases:
    In **timeZone** , you can pass any IANA or offset values specified in  **[View TimeZones](https://github.com/sandeepvvn/ctoc_timezone/wiki/TimeZones)**. Not passing or giving empty string converts to local time.  
    
    In **format** sepcify any of the format types in  **[View Formats](https://github.com/sandeepvvn/ctoc_timezone/wiki/Formats)**. Not passing a format or giving empty returns in default format.
-   Example:
+   **Example:**
           
-          `CtoC.toTimeZone(new Date(),"EST");`
+   `CtoC.toTimeZone(new Date(),"EST");`
           
-   Output:
+   **Output:**
          
-         `Fri Mar 1 2013 05:30:00`
+    `Fri Mar 1 2013 05:30:00`
     
-    Changing format in toTimeZone:
+  **Changing format in toTimeZone:**
+        
         `CtoC.toTimeZone(new Date(),"EST","Do MMM YYYY hh:mm:ss #{EST}");`
         
-    Output :
+  **Output :**
         
         `28th Feb 2013 19:00:00 EST`
     
-   **Changing Format:**
+   ### Changing Format:
          
-  Use the 'toFormat' method in CtoC.
+  **Use the 'toFormat' method in CtoC.**
      
-     `CtoC.toFormat(dateobject,format)`
+   `CtoC.toFormat(dateobject,format)`
+  
   Format accepts two parameters - dateobject the date passed in date type and an optional format in string of specifies types. **[View Formats](https://github.com/sandeepvvn/ctoc_timezone/wiki/Formats)**
   
-  Example:
+  **Example:**
   
   `CtoC.toFormat(new Date(),"Do MMM YYYY hh:mm:ss #{EST}");`
   
-  Output:
+  **Output:**
   
   `28th Feb 2013 19:00:00 EST`
 
