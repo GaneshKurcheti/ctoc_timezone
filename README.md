@@ -43,7 +43,7 @@ The package could be used for following cases:
     
      Output :
   
-  `Thu Feb 28 2013 19:00:00`
+    `Thu Feb 28 2013 19:00:00 `
    
     Using offset in hh:mm format:
    
