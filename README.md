@@ -1,7 +1,7 @@
 # CtoC
 
 
-**CtoC**(Convert to client timezone) is a simple yet useful JS that is used to convert the time to the client side timezone by employing minimum changes  in your application. c2c_timezone is capable to convert the  date-time to both local and any other timezone you want it to. 
+**CtoC**(Convert to client timezone) is a simple yet useful script that is used to convert the time to the client side timezone by employing minimum changes  in your application.CtoC capable to convert the  date-time to both local and any other timezone you want it to. 
 
 This package has **javascript handle** that can be fetched into your code to handle the date objects. The primary purpose of this package is to eliminate the mundane code that user  uses to handle timezones and necessary formats.
 
@@ -76,7 +76,7 @@ The package could be used for following cases:
   
 ## Convert using method call :
 
-  ### Chnaging TimeZone:
+  ### Changing TimeZone:
   
   **Use the  `toTimeZone` method in CtoC.**
         
@@ -119,7 +119,36 @@ The package could be used for following cases:
   
   `28th Feb 2013 19:00:00 EST`
 
-
+### Default TimeZone and Format :
+   
+   You can also set the default timezone and formats using the supported timezones and formats using the methods:
+   
+   
+  **Default Timezone**
+   
+   `CtoC.defaultTimeZone`
+   
+   **Example:
+   
+   `CtoC.defaultTimeZone="IST"`
+   
+  **Default Format**
+  
+  `CtoC.defaultFormat`
+  
+  **Example:**
+  
+   `CtoC.defaultFormat="Do MM YYYY , hh:mm:ss"`
+   
+   **Note:**
+   
+   The order of parameters depends is as follows:
+   
+   **If any method or data attribute is given** either format or timezone as a parameter, the call has higher precedence to that of default values been set. 
+   
+   **If the defualt values are set** and the method has no params then the default values are considered.
+   
+   **If there are no default values and method params** , then the timezone is set to Local and the default format will be Date String.
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
