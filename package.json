@@ -1,0 +1,33 @@
+{
+  "name": "ctoc_timezone",
+  "version": "1.0.1",
+  "description": "CtoCtimezone is a simple yet useful JS that is used to convert the time to client side timezone by employing minimum changes in your application. Please refer github page for detailed information.",
+  "main": "ctoc-timezone.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GaneshKurcheti/ctoc_timezone.git"
+  },
+  "keywords": [
+    "convert-to-client",
+    "client-timezone",
+    "format-time",
+    "browser-timezone",
+    "ctoc-timezone",
+    "time-conversion",
+    "server-to-client-time",
+    "timezone",
+    "datetime-client"
+  ],
+  "author": "Ganesh Kurcheti <kurchetinagaganeshsing@gmail.com>",
+  "contributors": [
+    "Sandeep Vemulapalli<vnsandeepv@gmail.com>"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GaneshKurcheti/ctoc_timezone/issues"
+  },
+  "homepage": "https://github.com/GaneshKurcheti/ctoc_timezone#readme"
+}
