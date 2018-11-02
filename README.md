@@ -5,7 +5,14 @@
 
 This package has **javascript handle** that can be fetched into your code to handle the date objects. The primary purpose of this package is to eliminate the mundane code that user  uses to handle timezones and necessary formats.
 
-The package could be used for following cases:
+**[View on npm](https://github.com/sandeepvvn/ctoc_timezone/wiki/TimeZones)**
+
+**jsdelivr link : https://cdn.jsdelivr.net/npm/ctoc_timezone@1.0.1/ctoc-timezone.min.js **
+
+The package could be used for following cases:.
+
+**Currently th epackage supports only conversions on the client end. So the node env and runkit on npm don't support this version.
+
 - **Convert the date from server to local (host or browser) time.**
 - **Convert the date from server to ANY standard timezone(IANA) offset you want it to be.**
 
