@@ -7,7 +7,7 @@ This package has **javascript handle** that can be fetched into your code to han
 
 **[View on npm](https://github.com/sandeepvvn/ctoc_timezone/wiki/TimeZones)**
 
-**jsdelivr link : https://cdn.jsdelivr.net/npm/ctoc_timezone@1.0.1/ctoc-timezone.min.js **
+**jsdelivr link :** https://cdn.jsdelivr.net/npm/ctoc_timezone@1.0.1/ctoc-timezone.min.js
 
 The package could be used for following cases:.
 
@@ -51,7 +51,7 @@ The package could be used for following cases:.
    
    `<div data-ctoc-timezone  data-ctoc-time="Mar 01 2013 05:30:00 +5:30" data-ctoc-req-zone="America/Lima" data-ctoc-req-format=""> </div>`
     
-   **Output :
+   **Output :**
   
   `Thu Feb 28 2013 19:00:00`
    
@@ -135,7 +135,7 @@ The package could be used for following cases:.
    
    `CtoC.defaultTimeZone`
    
-   **Example:
+   **Example:**
    
    `CtoC.defaultTimeZone="IST"`
    
